@@ -6,7 +6,6 @@ export const Section = styled.section`
     background-color: ${({theme}) => theme.body};
     padding: 1rem;
     position: relative;
-    background-color: red;
     overflow: hidden;
 `
 export const Title = styled.h1`
