@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import img1 from '../../../assets/Nfts/bighead.svg'
 import img2 from '../../../assets/Nfts/bighead-1.svg'
 import img3 from '../../../assets/Nfts/bighead-2.svg'
@@ -67,9 +67,15 @@ const teamData = [
 ]
 
 export default function Team() {
+  const ref = useRef(null)
+  const [element, setElement] = useState(null)
+  useEffect(() => {
+      setElement(ref.current)
+  }, [])
+
   return (
-    <Section id='team'>
-        <ConfettiComponent/>
+    <Section id='team' ref={ref}>
+        <ConfettiComponent heightRef={element !== null && element}/>
         <Title>Team</Title>
         <Container>
             {

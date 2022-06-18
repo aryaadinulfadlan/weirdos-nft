@@ -7,6 +7,7 @@ export const Section = styled.section`
     background-color: #202020;
     display: grid;
     align-items: center;
+    overflow: hidden;
 `
 export const Container = styled.div`
     height: 90%;

@@ -4,6 +4,7 @@ import { FontSize11 } from "../../../GlobalStyles";
 export const Section = styled.section`
     background-color: ${({theme}) => theme.body};
     padding: 1rem;
+    overflow: hidden;
 `
 export const Container = styled.div`
     width: 95%;
