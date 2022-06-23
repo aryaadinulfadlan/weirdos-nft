@@ -41,7 +41,7 @@ export default function Footer() {
             <p>&copy; {new Date().getFullYear()} weirdos club. all rights reserved</p>
             <div>
                 Made with <FaHeart/> by
-                <a href="https://google.com">Arya Adinul Fadlan</a>
+                <a href="https://arya-adinul-fadlan.netlify.app/" target={'_blank'} rel="noreferrer">Arya Adinul Fadlan</a>
             </div>
         </Copyright>
     </Section>

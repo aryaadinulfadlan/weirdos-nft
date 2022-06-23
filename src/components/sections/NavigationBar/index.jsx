@@ -13,7 +13,7 @@ export default function NavigationBar() {
         block: 'start',
         inline: 'nearest'
       })
-      setClicked(prev => !prev) 
+      setClicked(false) 
     }
     useEffect(() => {
       if (clicked) {
