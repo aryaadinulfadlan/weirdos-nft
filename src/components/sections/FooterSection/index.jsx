@@ -1,7 +1,7 @@
 import React from 'react'
 import FooterBanner from './FooterBanner'
 import { Bottom, Copyright, Item, LogoList, LogoText, LogoWrap, Menu, Section } from './FooterStyle'
-import { FaFacebook, FaHeart, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Link } from 'react-router-dom'
 
 export default function Footer() {
@@ -39,10 +39,10 @@ export default function Footer() {
         </Bottom>
         <Copyright>
             <p>&copy; {new Date().getFullYear()} weirdos club. all rights reserved</p>
-            <div>
+            {/* <div>
                 Made with <FaHeart/> by
                 <a href="https://arya-adinul-fadlan.netlify.app/" target={'_blank'} rel="noreferrer">Arya Adinul Fadlan</a>
-            </div>
+            </div> */}
         </Copyright>
     </Section>
   )

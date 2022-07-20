@@ -102,7 +102,7 @@ export const Copyright = styled.div`
         }
     }
     @media (min-width: 900px){
-        justify-content: space-between;
+        /* justify-content: space-between; */
         grid-auto-flow: column;
     }
 `

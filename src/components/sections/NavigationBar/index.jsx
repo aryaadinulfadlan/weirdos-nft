@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 import Button from "../../Button"
 import Logo from "../../Logo"
 import { BarWrap, HamburgerMenu, Item, MenuBar, Navbar, Section } from "./NavigationStyle"
-import './style.css'
 
 export default function NavigationBar() {
     const [clicked, setClicked] = useState(false)
@@ -17,9 +16,9 @@ export default function NavigationBar() {
     }
     useEffect(() => {
       if (clicked) {
-        document.body.classList.add('stop')
+        document.body.style.overflow = 'hidden'
       } else {
-        document.body.classList.remove('stop')
+        document.body.style.overflow = 'auto'
       }
     }, [clicked])
     return (
